@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+div.menu{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+
+div.container{
+    background-color: blue;
+    width: 100%;
+    height: 100vh;
+
+    /*Function calc*/
+    height: calc(100vh - 100px);
+
+}
+
+h1::after{
+    content: attr(data-name);
+}
+
+.imagen, .img{
+    background-color: aqua;
+    background-blend-mode: soft-light;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor{
+    
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    gap: 0 15px;
+    font-family: 'Rubik', sans-serif;
+    background-color: #F8CB2E;
+    text-transform: uppercase;
+}
+
+.contenedor_enlaces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.logo:nth-child(1){
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+img{
+    width: 100%;
+    height: 50px;
+}
+
+header{
+    background-image: url('Blog-Qué-aprenderás-en-un-taller-de-robótica.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(20, 20, 20);
+    background-blend-mode: soft-light;
+    height: calc(100vh - 125px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px 0;
+    padding: 20px 180px 50px 180px;
+    color: white;
+}
+
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Rubik', sans-serif;
+    
+
+}
+
+.inicio a{
+    color: white;
+}
+
+.inicio_enlaces{
+    display: flex;
+    align-items: center;
+    gap: 0 60px;
+    
+}
+.inicio_enlaces a{
+    transition: all 300ms;
+}
+
+.inicio_enlaces a:hover{
+    color: #EE5007;
+    transform: scale(1.15);
+}
+
+.inicio_enlaces a:last-child{
+    color: white;
+}
+
+.centro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px 0;
+    text-align: center;
+}
+
+.final{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    gap: 0 15px;
+
+}
+
+.final_inicio, .final_centro, .final_final{
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+}
+
+.icono{
+    color: white;
+}
+
+
+
+.header_contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 60vh;
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    margin-top: 70vh;
+}
+
+.btn{
+    background-color: #EE5007;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+.btn:hover,.btn_logout:hover{
+    background-color: #c01f27;
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.btn_logout{
+    background-color: #EE5007;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 18px;
+    transition: all 300ms;
+}
+
+.frase{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+}
+.fa-solid{
+    color: black;
+    font-size: 22px;
+}
+
+.contenedor_nombre{
+    display: flex;
+    gap: 0 15px;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.imagen_logo{
+    width: 40px;
+    height: 40px;
+}
+
+.icono_final{
+    background-color: #EE5007;
+    padding: 7px;
+    border-radius: 50%;
+    transition: all 300ms;
+}
+
+.icono_final:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+    rotate: calc(360deg);
+}
+
+.info{
+    height: 50vh;
+    background-image: url(edward-unsplash-blur.jpg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0 100px;
+    padding: 50px 100px;
+    color: white;
+
+}
+
+.info_texto p:nth-child(1){
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.info_texto p:nth-child(2){
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 29px;
+    
+}
+
+.info_texto{
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+    width: 70%;
+}
+
+.info_imagen{
+    height: 100%;
+    width: 50%;
+    background-image: url(pexels-scott-webb-136739.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.info_imagen_fondo{
+    width: 50%;
+    height: 100px;
+    background: rgba(226, 209, 209, 0.663);
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.contenedor_nombre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contenedor_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 15px;
+}
+
+.contenedor_menu{
+    display: none;
+}
+
+.contenedor_menu:hover{
+    cursor: pointer;
+}
+
+.barra{
+        color: black;
+        font-size: 25px;
+    }
+
+    
+    .menu_desplegable{
+        display: none;
+        transition: all 400ms;
+    }
+    .barra:hover{
+        cursor: pointer;
+    }
+    .cont-menu{
+         position: absolute;
+        right: 1rem; 
+        /*background-color: rgba(255, 255, 255, .1);*/
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        gap: 8px 0;
+        font-size: 22px;
+        padding: 20px 0;
+        width: 300px;
+        transition: all 400ms;
+        
+    }
+
+    .cont-menu a{
+        transition: all .5s;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+
+    .cont-menu a:hover{
+        color: #EE5007;
+    }
+    .icono_close{
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: end;
+        padding: 0px 20px;
+        
+    }
+    .active{
+          transform: translateY(-600px);  
+    }
+
+    .opacity{
+        background-color: rgba(0, 0, 0, .5);
+        
+    }
+
+    .inicio_nombre .logo{
+        font-size: 28px;
+    }
+
+    #icono_close:hover{
+        cursor: pointer;
+    }
+
+@media (max-width: 1279px) {
+    .final{
+        flex-direction: column;
+        gap: 20px 0;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .contenedor_menu{
+    display: block;
+    }
+
+    header{
+        padding: 0px 0px 100px 0px;
+        /*justify-content: end;*/
+       
+        height: calc(100vh - 155px);
+    }
+
+    .inicio{
+        display: none;
+    }
+
+    .menu_desplegable{
+        display: block;
+    }
+}
